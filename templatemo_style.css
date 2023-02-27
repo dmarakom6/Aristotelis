@@ -8,6 +8,7 @@ body {
 	line-height: 1.6em; 
 	letter-spacing: 1px;
 	background-color: #000000;
+	width: 100%;
 }
 
 a, a:link, a:visited { color: #770726; font-weight: normal; text-decoration: none }
