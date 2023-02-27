@@ -4,7 +4,7 @@ body {
 	padding: 0;
 	color: #8e7555;
 	font-family: Georgia, "Times New Roman", Times, serif;
-	font-size: 12px;
+	font-size: 15px;
 	line-height: 1.6em; 
 	letter-spacing: 1px;
 	background-color: #000000;
@@ -163,6 +163,8 @@ h6 { font-size: 12px; margin: 0 0 5px; padding: 0; }
 	background: url(images/templatemo_hr2.png) no-repeat bottom center
 }
 
+.cbox_fw img {width: 20em; height: 10em;}
+
 .cbox_fws {
 	clear: both;
 	padding-bottom: 20px;
@@ -174,8 +176,8 @@ h6 { font-size: 12px; margin: 0 0 5px; padding: 0; }
 	padding: 0; margin: 0; background: none;
 }
 
-.cbox_w280 { width: 280px; margin-bottom: 20px; }
-.cbox_w280 img { margin-bottom: 10px }
+.cbox_w280 { margin-bottom: 20px; }
+.cbox_w280 img { margin-bottom: 10px; width: 15rem; height: 12rem; }
 
 #nne {
 	margin-bottom: 40px;
@@ -188,7 +190,8 @@ ul.nne_box li span { display: block; color: #850d2f; }
 ul.nne_box li a { color: #8e7555 }
 
 ul.photo_gallery { padding: 0; margin: 0; list-style: none }
-ul.photo_gallery li { padding: 0; margin: 0 5px 15px 0; display: block; float: left; }
+ul.photo_gallery li { padding: 0; margin: 0 5px 15px 0; display: block; float: left;}
+ul.photo_gallery img {width: 10rem; height:10rem;}
 ul.photo_gallery .rmp { margin: 0 0 15px }
 
 #contact_form {  padding: 0; }
@@ -266,4 +269,108 @@ ul.photo_gallery .rmp { margin: 0 0 15px }
 
 #templatemo_footer a { 
 	color: #999494;
+}
+
+
+/* Quotes Carousel */
+
+.container {
+	display: flex;
+	position: relative;
+	flex-direction: flex-row;
+	height: 50vh;
+	width: 33.333333vw;
+	border: 1px solid black;
+	box-shadow: 5px 5px black;
+	margin: auto;
+	margin-top: 20vh;
+	padding: 16px 32px;
+	overflow: hidden;
+	border-radius: 4px;
+}
+
+.quote_container {
+	display: block;
+	margin: auto;
+	margin-right: 50vw;
+	min-width: 33.33333vw;
+	overflow: hidden;
+	position: relative;
+	left: 0vw;
+	animation-name: carrousel;
+	animation-duration: 35s;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: infinite;
+}
+
+.quote {
+	display: block;
+	text-align: center;
+	margin: auto;
+	margin-bottom: 30px;
+}
+
+.author {
+	display: block;
+	text-align: center;
+	margin: auto;
+}
+
+.quote, .author {font-size: 1.5em;}
+
+@keyframes carrousel {
+	0% {
+		left: 0vw;
+		opacity: 1;
+	}
+
+	20% {
+		left: 0vw;
+		opacity: 1;
+	}
+
+	25% {
+		left: -83vw;
+		opacity: 1;
+	}
+
+	45% {
+		left: -83vw;
+		opacity: 1;
+	}
+
+	50% {
+		left: -166vw;
+		opacity: 1;
+	}
+
+	70% {
+		left: -166vw;
+		opacity: 1;
+	}
+
+	75% {
+		left: -250vw;
+		opacity: 1;
+	}
+
+	95% {
+		left: -250vw;
+		opacity: 1;
+	}
+
+	97% {
+		left: -330vw;
+		opacity: 0;
+	}
+
+	97.5% {
+		left: 83vw;
+		opacity: 0;
+	}
+
+	100% {
+		left: 0vw;
+		opacity: 1;
+	}
 }
